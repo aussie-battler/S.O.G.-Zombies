@@ -4,28 +4,21 @@ diag_log ">>> initServer.sqf START";
 
 publicVariable "screenMonitor";
 
-/* // Initialize global spawn marker list (server only)
+// Initialize global spawn marker list (server only)
 if (isServer) then {
     if (isNil "BAC_zombieSpawnMarkers") then {
         BAC_zombieSpawnMarkers = ["zomb_spawn_1"]; // initial/default spawner marker(s)
         publicVariable "BAC_zombieSpawnMarkers";
     };
-}; */
+};
 
 
 BAC_zombRoundCount = 1; 
 publicVariable "BAC_zombRoundCount";
-
-
-
-/*
-    Initializes starting zombie sector and spawn system
-*/
 // Starter zone spawn markers
 private _initSpawnPoints = ["teleport_1"];
-// Unlock starter zone (use call, not execVM)
-["zone1", _initSpawnPoints] call BAC_fnc_ZombieSectorUnlock;
-
+// Register starter zone as "zone1"
+["zone1", _initSpawnPoints] execVM "functions\fn_ZombieSectorUnlock.sqf";
 
 [] spawn {
 	uiSleep 6;

@@ -6,18 +6,12 @@
         0: STRING - zone name (e.g. "zone1")
         1: ARRAY  - marker names for teleport points in that zone
 
-    Example:
-        ["zone1", ["teleport_1","teleport_2"]] call BAC_fnc_ZombieSectorUnlock;
+		["zone1", _initSpawnPoints] execVM "scripts\fn_ZombieSectorUnlock.sqf";
 */
 
 params ["_zoneName", "_markerArray"];
 
-// Safety: ensure _markerArray is an array
-if !(typeName _markerArray isEqualTo "ARRAY") then {
-    _markerArray = [_markerArray];
-};
-
-// Save marker array for this zone
+// Save marker array in missionNamespace under zone name
 missionNamespace setVariable [format ["BAC_zoneMarkers_%1", _zoneName], _markerArray];
 
 // Add zone to unlocked list if not already there
@@ -31,7 +25,5 @@ publicVariable "BAC_unlockedZones";
 
 // Debug logging
 private _totalSpawns = count (missionNamespace getVariable ["BAC_availableSpawns", []]);
-diag_log format [
-    "✅ Zone %1 unlocked! Added %2 new spawns. Total available: %3",
-    _zoneName, count _markerArray, _totalSpawns
-];
+//[format ["✅ Zone %1 unlocked! Added %2 new spawns. Total available: %3", _zoneName, count _markerArray, _totalSpawns]] remoteExec ["systemChat", 0];
+diag_log["✅ Zone %1 unlocked! Added %2 new spawns. Total available: %3", _zoneName, count _markerArray, _totalSpawns];

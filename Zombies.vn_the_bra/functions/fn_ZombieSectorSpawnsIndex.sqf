@@ -11,14 +11,8 @@ private _allSpawns = [];
     { _allSpawns pushBack _x } forEach _zoneMarkers;
 } forEach _allUnlocked;
 
-// Save master list
 missionNamespace setVariable ["BAC_availableSpawns", _allSpawns];
 publicVariable "BAC_availableSpawns";
 
-// Debug info
-diag_log format [
-    "📌 Available zombie spawns updated: %1 total | Type: %2 | Content: %3",
-    count _allSpawns,
-    typeName _allSpawns,
-    _allSpawns
-];
+// Debug
+diag_log format ["📌 Available zombie spawns updated: %1 points", count _allSpawns];

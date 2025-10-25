@@ -30,7 +30,6 @@ diag_log ">>> initPlayerLocal.sqf START";
 };
 
 
-
 /*
     File: initPlayerLocal.sqf
     Description: Client-side smoke detection for support request

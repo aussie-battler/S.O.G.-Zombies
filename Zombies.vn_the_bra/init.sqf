@@ -29,8 +29,6 @@ BAC_fnc_spawnC119 = {
 publicVariable "BAC_fnc_spawnC119";
 
 
-//ALL THE PLAYER VARIABLES HERE
-
 
 [] spawn {
 
