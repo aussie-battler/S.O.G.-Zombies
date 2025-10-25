@@ -1,3 +1,4 @@
+![20251024162327_1](https://github.com/user-attachments/assets/f05b1b9a-75c9-4a87-93c1-5c353217de4d)
 # S.O.G.-Zombiesby Bacon Oreos
 S.O.G. Zombies 
 ```
