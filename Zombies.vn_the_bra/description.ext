@@ -44,6 +44,7 @@ showHUD[] = {
             class FUNCTIONNAME {}; 
 */
 // Config include for discovered sounds
+//ALL THE PLAYER VARIABLES HERE
 class Params {
 
     class VoicePack_P1 {
@@ -100,6 +101,43 @@ class Params {
         texts[] = {"Jim", "Bob", "Sam"};
         default = 0;
     };
+    class VoicePack_P10 {
+        title = "Voice Pack - Player 10";
+        values[] = {0,1,2};
+        texts[] = {"Jim", "Bob", "Sam"};
+        default = 0;
+    };
+    class VoicePack_P11 {
+        title = "Voice Pack - Player 11";
+        values[] = {0,1,2};
+        texts[] = {"Jim", "Bob", "Sam"};
+        default = 0;
+    };
+    class VoicePack_P12 {
+        title = "Voice Pack - Player 12";
+        values[] = {0,1,2};
+        texts[] = {"Jim", "Bob", "Sam"};
+        default = 0;
+    };
+    class VoicePack_P13 {
+        title = "Voice Pack - Player 13";
+        values[] = {0,1,2};
+        texts[] = {"Jim", "Bob", "Sam"};
+        default = 0;
+    };
+    class VoicePack_P14 {
+        title = "Voice Pack - Player 14";
+        values[] = {0,1,2};
+        texts[] = {"Jim", "Bob", "Sam"};
+        default = 0;
+    };
+    class VoicePack_P15 {
+        title = "Voice Pack - Player 15";
+        values[] = {0,1,2};
+        texts[] = {"Jim", "Bob", "Sam"};
+        default = 0;
+    };
+
 };
 
 
