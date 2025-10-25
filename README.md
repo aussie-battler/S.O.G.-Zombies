@@ -36,4 +36,4 @@ Use Action 11 ( G recommended) use to place claymore
 Use Action 12 ( Space recommended) for jumping
 
 Use Action 13 ( your melee key of choice ) for custom melee system
-```![20251024162327_1](https://github.com/user-attachments/assets/6cf6eff5-069e-473a-8346-f58c2c404a25)
+
